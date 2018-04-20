@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    <title>Admin - Servers</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Servers</h1>
+    <table>
+        <tr>
+            <th>Hostgroup</th>
+            <th>Hostname</th>
+            <th>Port</th>
+            <th>Status</th>
+        </tr>
+        {% for server in servers %}
+            <tr>
+                <td>{{ server.0 }}</td>
+                <td>{{ server.1 }}</td>
+                <td>{{ server.2 }}</td>
+                <td>{{ server.3 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>

@@ -8,7 +8,7 @@
     </style>
 </head>
 <body>
-    <h1>Servers</h1>
+    <h1><a href='/'>Home</a> | Servers</h1>
     <table>
         <tr>
             <th>Hostgroup</th>
@@ -18,10 +18,10 @@
         </tr>
         {% for server in servers %}
             <tr>
-                <td>{{ server.0 }}</td>
-                <td>{{ server.1 }}</td>
-                <td>{{ server.2 }}</td>
-                <td>{{ server.3 }}</td>
+                <td>{{ server.hostgroup_id }}</td>
+                <td>{{ server.hostname }}</td>
+                <td>{{ server.port }}</td>
+                <td>{{ server.status }}</td>
             </tr>
         {% endfor %}
     </table>

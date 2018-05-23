@@ -9,52 +9,9 @@
 </head>
 <body>
     <h1>Rules</h1>
-    <table>
-        <tr>
-            <th>Username</th>
-            <th>Active</th>
-            <th>Match</th>
-            <th>Replace</th>
-        </tr>
-        {% for rule in rules %}
-            <tr>
-                <td>{{ rule.2 }}</td>
-                <td>{% if rule.1 == '1' %}Yes{% else %}No{% endif %}</td>
-                <td>{{ rule.10 }}</td>
-                <td>{{ rule.14 }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+    <a href='/rules/'>Rules</a>
     <h1>Servers</h1>
-    <table>
-        <tr>
-            <th>Hostgroup</th>
-            <th>Hostname</th>
-            <th>Port</th>
-            <th>Status</th>
-        </tr>
-        {% for server in servers %}
-            <tr>
-                <td>{{ server.0 }}</td>
-                <td>{{ server.1 }}</td>
-                <td>{{ server.2 }}</td>
-                <td>{{ server.3 }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+    <a href='/servers/'>Servers</a>
     <h1>Users</h1>
-    <table>
-        <tr>
-            <th>Username</th>
-            <th>Active</th>
-            <th>Default hostgroup</th>
-        </tr>
-        {% for user in users %}
-            <tr>
-                <td>{{ user.0 }}</td>
-                <td>{% if user.2 == '1' %}Yes{% else %}No{% endif %}</td>
-                <td>{{ user.4 }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+    <a href='/users/'>Users</a>
 </body>

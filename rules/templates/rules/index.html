@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <title>Admin - Rules</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href='/'>Home</a> | Rules</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Active</th>
+            <th>Schema name</th>
+        </tr>
+        {% for rule in rules %}
+            <tr>
+                <td>{{ rule.rule_id }}</td>
+                <td>{{ rule.active }}</td>
+                <td>{{ rule.schemaname }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>

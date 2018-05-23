@@ -8,7 +8,7 @@ name = "pypi"
 [packages]
 
 flask = "==0.12.2"
-flask-mysql = "==1.4.0"
+pymysql = "==0.8.0"
 python-dotenv = "==0.8.2"
 
 
